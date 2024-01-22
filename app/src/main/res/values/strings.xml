@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Seminario_3_PM_Vanesa_Nunez_Sierra</string>
+    <string name="texto">Este tipo de relato es el que se encuentra en todas las manifestaciones literarias como puede ser la leyenda, fábula, cuento, novela, epopeya, etcétera. Y por lo general se representa mediante la escritura. El relato construye a los personajes, a los acontecimientos, los tiempos y los espacios, y se desarrolla a partir de una, o varias, voces narrativas.</string>
+    <array name="spinner_items">
+        <item>icono 1</item>
+    </array>
+    <array name="spinner_items2">
+        <item>Venus</item>
+    </array>
 </resources>

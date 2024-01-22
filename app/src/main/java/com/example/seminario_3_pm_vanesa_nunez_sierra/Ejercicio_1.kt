@@ -46,7 +46,7 @@ import androidx.core.content.getSystemService
         val builder = NotificationCompat.Builder(contexto, canalId.toString())
             .setSmallIcon(R.drawable.notification_icon_124899)
             .setContentTitle("Notificacion")
-            .setContentText("Esto es una notificacion")
+            .setContentText("Esto es una notificacion. Mi id es "+canalId)
             .setContentIntent(pendingIntent)
             .addAction(R.drawable.notification_icon_124899,"Volver al ejercicio 1", pendingIntent_boton)
 

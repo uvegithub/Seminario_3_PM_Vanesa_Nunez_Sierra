@@ -15,4 +15,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, Ejercicio_1::class.java)
         startActivity(intent)
     }
+
+    fun iniciarActividadEjercicio2 (view : View){
+        val intent = Intent(this, Ejercicio_2::class.java)
+        startActivity(intent)
+    }
 }
