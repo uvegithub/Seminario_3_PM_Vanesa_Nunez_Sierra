@@ -105,4 +105,90 @@
         android:layout_marginBottom="20dp"
         android:layout_marginStart="20dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbotones"
+        android:textColor="@color/blueoscuro"
+        android:text="Numero de botones:"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_foto"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/boton_mas"
+        app:layout_constraintEnd_toStartOf="@id/numero_botones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbotones"
+        android:backgroundTint="@color/blueoscuro"
+        android:textSize="18dp"
+        android:layout_marginVertical="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero_botones"
+        android:textColor="@color/blueoscuro"
+        android:text="2"
+        android:fontFamily="serif"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@id/boton_menos"
+        app:layout_constraintStart_toEndOf="@id/boton_mas"
+        app:layout_constraintTop_toBottomOf="@id/tbotones"
+        android:layout_marginVertical="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/boton_menos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numero_botones"
+        app:layout_constraintTop_toBottomOf="@id/tbotones"
+        android:backgroundTint="@color/blueoscuro"
+        android:textSize="18dp"
+        android:layout_marginVertical="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayoutbotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="@color/blueoscuro"
+        android:enabled="true"
+        android:hint="texto de los botones"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numero_botones">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputedittextbotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar notificacion"
+        android:id="@+id/boton_noti"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textinputlayoutbotones"
+        android:backgroundTint="@color/blueoscuro"
+        android:textSize="18dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
